@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #e4e9f7;
+  background-color: #050816;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 3rem 0;
+  background: transparent;
+}
+
+.section-alt {
+  background: rgba(15, 23, 42, 0.8);
+}
+
+h1, h2, h3 {
+  color: #ffffff;
+}
+
+/* Top bar */
+.top-bar {
+  background: #020617;
+  color: #cbd5f5;
+  font-size: 0.9rem;
+  padding: 0.3rem 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Header */
+.main-header {
+  background: rgba(15, 23, 42, 0.95);
+  border-bottom: 1px solid #1e293b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 10%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #e5e7eb;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #cbd5f5;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+/* Hero */
+.data{
+  background: radial-gradient(circle at top, #0ea5e9, #020617 55%);
+  color: #ffffff;
+  padding: 4rem 10% 5rem 10%;
+}
+
+.data-content {
+  max-width: 650px;
+}
+
+.data h1 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.data p {
+  margin-bottom: 1.5rem;
+  color: #e5e7eb;
+}
+
+/* Button */
+.btn-primary {
+  display: inline-block;
+  background: #38bdf8;
+  color: #020617;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #0ea5e9;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 10px;
+  padding: 1.2rem;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.7);
+  border: 1px solid #1e293b;
+}
+
+/* Features & text lists */
+.feature-list, .resource-list {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+}
+
+.feature-list li,
+.resource-list li {
+  margin-bottom: 0.4rem;
+}
+
+/* Two-column layout */
+.two-column {
+  display: grid;
+  grid-template-columns: 1.6fr 1.1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.highlight-box {
+  background: radial-gradient(circle at top left, #22d3ee, #0f172a);
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.9);
+}
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.gallery-grid img {
+  height: 175.01px;
+  width: 263px;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.9);
+}
+
+/* Contact */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 1.4fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #1f2937;
+  margin-bottom: 0.9rem;
+  font-size: 0.95rem;
+  background: #020617;
+  color: #e5e7eb;
+}
+
+#feedbackMessage {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+.main-footer {
+  background: #020617;
+  color: #9ca3af;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 0.4rem 5%;
+  }
+
+  .main-header {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.7rem 5%;
+  }
+
+  .data {
+    padding: 3rem 5%;
+  }
+
+  .two-column,
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.span{
+  align-content: last baseline;
+}
