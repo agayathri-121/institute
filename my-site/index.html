@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Orbital Learning Center - Space & Sky Education</title>
+  <link rel="stylesheet" href="..css/space.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- Top Info Bar -->
+  <div class="top-bar">
+    <span>Email: info@orbitallearning.org</span>
+    <span>Phone: +91-98765 43210</span>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="logo">Orbital Learning Center</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#modules">Learning Modules</a></li>
+        <li><a href="#space-station">Space Station</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section - 2: -->
+  <section class="data">
+    <div class="data-content">
+      <h1>Explore the Sky, Space & Space Stations</h1>
+      <p>
+        An educational platform to learn about the night sky, planets, 
+        and life aboard space stations.
+      </p>
+      <a href="#modules" class="btn-primary">Start Learning</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About This Space Education Portal</h2>
+      <p>
+        The Orbital Learning Center is designed for students and educators 
+        who want to understand our universe. From basic sky watching to 
+        advanced concepts of orbital mechanics and space station life, 
+        this website provides structured content and visual resources.
+      </p>
+    </div>
+  </section>
+
+  <!-- Learning Modules -->
+  <section id="modules" class="section section-alt">
+    <div class="container">
+      <h2>Learning Modules</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>1. The Night Sky</h3>
+          <p>Constellations, stars, and how to identify objects in the sky.</p>
+        </div>
+        <div class="card">
+          <h3>2. Our Solar System</h3>
+          <p>Planets, moons, asteroids, and comets orbiting our Sun.</p>
+        </div>
+        <div class="card">
+          <h3>3. Space Stations</h3>
+          <p>How space stations work, life in microgravity, and ISS facts.</p>
+        </div>
+        <div class="card">
+          <h3>4. Future Missions</h3>
+          <p>Human missions to the Moon, Mars, and beyond.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Space Station Focus Section -->
+  <section id="space-station" class="section">
+    <div class="container">
+      <h2>Inside a Space Station</h2>
+      <div class="two-column">
+        <div>
+          <p>
+            Space stations are laboratories in orbit where astronauts live 
+            and work. They perform experiments in microgravity, observe 
+            Earth and space, and test technologies for future deep-space missions.
+          </p>
+          <ul class="feature-list">
+            <li>Microgravity experiments in physics and biology</li>
+            <li>Earth observation and climate monitoring</li>
+            <li>International collaboration between space agencies</li>
+            <li>Testing life support systems for long-duration spaceflight</li>
+          </ul>
+        </div>
+        <div class="highlight-box">
+          <h3>Key Facts</h3>
+          <p><strong>Orbit Height:</strong> ~400 km above Earth</p>
+          <p><strong>Speed:</strong> ~28,000 km/h (about 90 minutes per orbit)</p>
+          <p><strong>Crew:</strong> Astronauts from different countries</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section section-alt">
+    <div class="container">
+      <h2>Space & Sky Gallery</h2>
+      <div class="gallery-grid">
+        <img src="img/earth.webp" alt="Earth from Space" /><span>Earth from space</span>
+        <img src="img/sstation.jpg" alt="Space Station" /><span>Space Station</span>
+        <img src="img/sky.jpeg" alt="Night Sky"/><span>Night sky</span>
+        <img src="img/astronaut.jpg" alt="Astronaut in Space" /><span>Astronauts</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources Section -->
+  <section id="resources" class="section">
+    <div class="container">
+      <h2>Student Resources</h2>
+      <ul class="resource-list">
+        <li>Beginner’s guide to telescopes and sky watching</li>
+        <li>Printable star charts for different months</li>
+        <li>Activity sheets on gravity and orbits</li>
+        <li>Classroom project ideas about space stations</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact / Enquiry Section -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2>Contact & Feedback</h2>
+      <div class="contact-layout">
+        <div>
+          <h3>For Schools & Educators</h3>
+          <p>
+            Contact us to request educational material, workshops, or virtual 
+            sessions about space and space stations.
+          </p>
+          <p><strong>Email:</strong> education@orbitallearning.org</p>
+        </div>
+        <form id="feedbackForm" class="contact-form">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="role">You are a</label>
+          <select id="role" name="role" required>
+            <option value="" disabled selected>Select</option>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="parent">Parent</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="message">Message / Feedback</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit" class="btn-primary">Submit</button>
+          <p id="feedbackMessage"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; 2025 Orbital Learning Center. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
